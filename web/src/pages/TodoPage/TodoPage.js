@@ -9,7 +9,7 @@ const TodoPage = () => {
     <>
       <MetaTags title="Todo" description="Todo page" />
 
-      <div className="flex flex-col items-center w-full bg-red-500">
+      <div className="flex flex-col items-center w-full">
         <h1>TodoPage</h1>
         <TodoWrapper />
       </div>
