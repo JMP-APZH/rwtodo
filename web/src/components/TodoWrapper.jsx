@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 uuidv4();
 
 import './TodoForm.css'
+import Todo from './Todo';
 
 const TodoWrapper = () => {
   const [todos, setTodos] = useState([])
@@ -18,6 +19,7 @@ const TodoWrapper = () => {
   return (
     <div className="TodoWrapper">
       <TodoForm addTodo={addTodo} />
+      <Todo />
     </div>
   )
 }
