@@ -9,20 +9,17 @@ const TodoForm = ({ addTodo }) => {
     setValue(e.target.value)
   }
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     // console.log(value)
     addTodo(value)
-    setValue("")
+    setValue('')
   }
 
   return (
     <>
       <div className="flex flex-col justify-center text-white">
-        <p className="text-center">TodoForm</p>
-        <form
-          className="TodoForm"
-          onSubmit={handleSubmit}
-        >
+        <h1 className="text-center">Get that shit done !</h1>
+        <form className="TodoForm" onSubmit={handleSubmit}>
           <input
             type="text"
             className="todo-input text-center"
