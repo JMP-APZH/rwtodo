@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './TodoForm.css'
 
 const EditTodoForm = ({ editTodo, task }) => {
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState(task.task)
   const handleChange = (e) => {
     // console.log(e.target.value)
     setValue(e.target.value)
